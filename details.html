@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Movie Details</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">CineFind</div>
+    <div class="controls">
+      <a href="index.html" class="btn">← Back</a>
+      <button id="darkToggle2" class="btn">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="detail" class="detail-card"></section>
+  </main>
+
+  <footer class="footer"><small>Powered by OMDb</small></footer>
+
+  <script>window.OMDB_API_KEY = "72403727";</script>
+  <script src="details.js"></script>
+</body>
+</html>

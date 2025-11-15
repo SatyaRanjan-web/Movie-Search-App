@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">CineFind</div>
+    <div class="controls">
+      <label class="search">
+        <input id="searchInput" type="search" placeholder="Search movies, e.g. Inception, 3 Idiots" />
+      </label>
+      <button id="searchBtn" class="btn primary">Search</button>
+      <button id="darkToggle" class="btn">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Find movies, view details & trailers</h1>
+      <p class="muted">Type a movie name and press Search (or Enter). Click a poster for details.</p>
+    </section>
+
+    <section id="results" class="movie-grid" aria-live="polite"></section>
+
+    <section id="empty" class="empty hidden">
+      <p>No results yet — try searching for a movie.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Built with OMDb API · API key embedded for demo. Improve by storing the key on a server.</small>
+  </footer>
+
+  <script>
+    // Expose API key for the client app.
+    window.OMDB_API_KEY = "72403727";
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
